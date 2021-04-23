@@ -14,7 +14,6 @@
 # limitations under the License.
 
 # [START gae_python38_app]
-import os
 from flask import Flask, request, jsonify, redirect
 
 
@@ -25,7 +24,6 @@ app = Flask(__name__)
 
 @app.before_first_request
 def before_first_request_func():
-    #log_mgr.getLogger().info("Initialized instance")
     return
 
 

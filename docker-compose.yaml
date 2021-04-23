@@ -17,7 +17,13 @@ services:
     ports:
       - 6379:6379
 
-
+  ambry:
+    build:
+      context: .
+      dockerfile: ambry-dockerfile
+    ports:
+      - 1174:1174
+      - 1175:1175
 
   db:
     image: "dajobe/hbase"
